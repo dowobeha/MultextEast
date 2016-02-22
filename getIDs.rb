@@ -134,7 +134,7 @@ read(alignment_file).each{|line|
 		}
 		puts "<p id=\"#{para}\">" if para>0
 		unless ids.empty?
-			STDERR.puts "%04d" % most_recent_para
+#			STDERR.puts "%04d" % most_recent_para
 			puts "<aligned_block id=\"#{align_id}\" alignment=\"#{alignment}\">"; align_id += 1
 			ids.each{|token|
 			 	file,id = split(token)

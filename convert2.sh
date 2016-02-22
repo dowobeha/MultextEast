@@ -24,7 +24,7 @@ grep -v "<\/\?ptr" | \
 grep -v "<\/\?term" | \
 grep -v "<\/\?title" | \
 grep -v "<\/" | \
-tr '\n' ' ' | sed 's,\s\+, ,g' | sed 's,> <,><,g' | sed 's,\(<[^\/]\),\n\1,g' | grep -v "^$" | sed 's,^\s\+,,' | sed 's,\(.* xml:id="\)[A-Za-z][A-Za-z][A-Za-z].\([^"]*"\)[^>]*\(>\),\1\2\3,' | grep "<" | sed 's,<q [^>]*>\(.*\),\1,' | tr '\n' ' ' | sed 's,\s\+, ,g' | sed 's,> <,><,g' | sed 's,\(<[^\/]\),\n\1,g' | grep -v "^$" | sed 's,^\s\+,,' | sed 's,<quote ,<p ,; s,<lg ,<p ,; s,<l ,<s ,; s,<list ,<p ,; s,<item ,<s ,' > simplified-${lang}.xml
+tr '\n' ' ' | sed 's,\s\+, ,g' | sed 's,> <,><,g' | sed 's,\(<[^\/]\),\n\1,g' | grep -v "^$" | sed 's,^\s\+,,' | sed 's,\(.* xml:id="\)[A-Za-z][A-Za-z][A-Za-z].\([^"]*"\)[^>]*\(>\),\1\2\3,' | grep "<" | sed 's,<q [^>]*>\(.*\),\1,' | tr '\n' ' ' | sed 's,\s\+, ,g' | sed 's,> <,><,g' | sed 's,\(<[^\/]\),\n\1,g' | grep -v "^$" | sed 's,^\s\+,,' | sed 's,<quote ,<p ,; s,<lg ,<p ,; s,<l ,<s ,; s,<list ,<p ,; s,<item ,<s ,' | sed 's,>,>\n,' | grep -v "^$" > simplified-${lang}.xml
 
 
 #sed 's,\(.* xml:id="\)[A-Za-z][A-Za-z][A-Za-z].\([^"]*"\)[^>]*\(>\),\1\2\3,' | sed 's,>.*,,; s,<,,'
