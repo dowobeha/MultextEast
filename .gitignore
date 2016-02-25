@@ -4,3 +4,5 @@
 *.parallel
 *.parallel2
 *.stats
+*.log
+simplified-*.xml
