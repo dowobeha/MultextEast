@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?oxygen RNGSchema="schema/tei_mte.rnc" type="compact"?>
+<!DOCTYPE teiCorpus SYSTEM "schema/tei_mte.dtd" [
+  <!ENTITY orwl-bg SYSTEM "orwl-bg.xml">
+  <!ENTITY orwl-cs SYSTEM "orwl-cs.xml">
+  <!ENTITY orwl-en SYSTEM "orwl-en.xml">
+  <!ENTITY orwl-et SYSTEM "orwl-et.xml">
+  <!ENTITY orwl-hu SYSTEM "orwl-hu.xml">
+  <!ENTITY orwl-lt SYSTEM "orwl-lt.xml">
+  <!ENTITY orwl-ro SYSTEM "orwl-ro.xml">
+  <!ENTITY orwl-ru SYSTEM "orwl-ru.xml">
+  <!ENTITY orwl-sl SYSTEM "orwl-sl.xml">
+  <!ENTITY orwl-sr SYSTEM "orwl-sr.xml">
+]>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xml:id="mte-cesdoc">
+  <teiHeader type="corpus" xml:lang="en" xml:id="mte-cesdoc.teiHeader">
+    <fileDesc>
+    <titleStmt>
+      <title xml:id="mte-cesdoc.title">MULTEXT-East cesDoc multilingual "1984" corpus</title>
+       <respStmt><name>Tomaž Erjavec, JSI</name> <resp>TEI encoding</resp></respStmt>
+      <respStmt>
+          <name>Jean Veronis, Nancy Ide
+            Laboratoire Parole et Langage
+            Centre National de la Recherche Scientifique
+            Aix-en-Provence, France
+          </name>
+          <resp>MULTEXT-East Project management</resp>
+        </respStmt>
+      <respStmt><name>Nancy Ide, Greg Priest-Dorman; Vassar</name> <resp>CES encoding</resp></respStmt>
+      <respStmt>
+        <name>Dan Tufiş, RACAI</name>
+        <resp>Romanian data</resp>
+      </respStmt>
+       <respStmt>
+        <name>Tomaž Erjavec, JSI</name> 
+        <resp>Slovene data</resp>
+      </respStmt>
+      <respStmt>
+        <name>Vladimír Petkevič, ITCL</name>
+        <resp>Czech data</resp>
+      </respStmt>
+      <respStmt>
+        <name>Tomaž Erjavec, JSI</name> 
+        <resp>Slovene data</resp>
+      </respStmt>
+      <respStmt>
+        <name>Ludmila Dimitrova, BAS</name>
+        <resp>Bulgarian data</resp>
+      </respStmt>
+      <respStmt>
+        <name>Heiki-Jaan Kaalep, TU</name>
+        <resp>Estonian data</resp>
+      </respStmt>
+      <respStmt>
+        <name>Csaba Oravecz, HAS</name>
+        <resp>Hungarian data</resp>
+      </respStmt>
+      <respStmt>
+        <name>Paul Sokolovsky, SIT</name>
+        <resp>Russian data</resp>
+      </respStmt>
+      <respStmt>
+        <name>Andrius Utka</name> 
+        <resp>Lithuanian data</resp>
+      </respStmt>
+      <respStmt>
+        <name>Cvetana Krstev</name>
+        <resp>Serbian data</resp>
+      </respStmt>
+      <funder>EU Copernicus Project COP106 "MULTEXT-East"</funder>
+      <funder>EU Copernicus Concerted Action "TELRI"</funder>
+      <funder>EU Copernicus Project PL96-1142 "Concede"</funder>
+      <funder>EU Capacities Project GA 211938 "MondiLex"</funder>
+      <funder>Individual partners' grants and contracts.</funder>
+    </titleStmt>
+    <editionStmt>
+      <edition>MULTEXT-East, Version 4</edition>
+    </editionStmt>
+    <publicationStmt>
+      <distributor>CLARIN.SI, www.clarin.si</distributor>
+      <distributor>MULTEXT-East Web site</distributor>
+      <address>
+        <addrLine>
+          <ref target="http://nl.ijs.si/ME/V4/">http://nl.ijs.si/ME/V4/</ref>
+        </addrLine>
+      </address>
+      <distributor>
+        Individual partners, c.f. component headers
+      </distributor>
+      <availability>
+        <p>Available for research purposes.</p>
+      </availability>
+    </publicationStmt>
+    <sourceDesc>
+        <listBibl>
+          <bibl sameAs="mteo-en.teiHeader" xml:lang="en">
+            <title>MULTEXT-East cesDoc: Nineteen Eighty-Four, English</title>
+          </bibl>
+          <bibl sameAs="mteo-ro.teiHeader" xml:lang="ro">
+            <title>MULTEXT-East cesDoc: Nineteen Eighty-Four, Romanian</title>
+          </bibl>
+          <bibl sameAs="mteo-sl.teiHeader" xml:lang="sl">
+            <title>MULTEXT-East cesDoc: Nineteen Eighty-Four, Slovene</title>
+          </bibl>
+          <bibl sameAs="mteo-cs.teiHeader" xml:lang="cs">
+            <title>MULTEXT-East cesDoc: Nineteen Eighty-Four, Czech</title>
+          </bibl>
+          <bibl sameAs="mteo-bg.teiHeader" xml:lang="bg">
+            <title>MULTEXT-East cesDoc: Nineteen Eighty-Four, Bulgarian</title>
+          </bibl>
+          <bibl sameAs="mteo-et.teiHeader" xml:lang="et">
+            <title>MULTEXT-East cesDoc: Nineteen Eighty-Four, Estonian</title>
+          </bibl>
+          <bibl sameAs="mteo-hu.teiHeader" xml:lang="hu">
+            <title>MULTEXT-East cesDoc: Nineteen Eighty-Four, Hungarian</title>
+          </bibl>
+          <bibl sameAs="mteo-ru.teiHeader" xml:lang="ru">
+            <title>MULTEXT-East cesDoc: Nineteen Eighty-Four, Russian</title>
+          </bibl>
+          <bibl sameAs="mteo-lt.teiHeader" xml:lang="lt">
+            <title>MULTEXT-East cesDoc: Nineteen Eighty-Four, Lithuanian</title>
+          </bibl>
+          <bibl sameAs="mteo-sr.teiHeader" xml:lang="sr">
+            <title>MULTEXT-East cesDoc: Nineteen Eighty-Four, Serbian</title>
+          </bibl>
+        </listBibl>
+    </sourceDesc>
+  </fileDesc>
+  <encodingDesc>
+    <projectDesc>
+      <p>MULTEXT-East: 
+         Multilingual Text Tools and Corpora for 
+         Central and Eastern European Languages. 
+         <ptr target="http://nl.ijs.si/ME/"/>
+      </p>
+    </projectDesc>
+    <editorialDecl>
+      <normalization method="silent">
+        <p>Encoded to Corpus Encoding Standard Level 1 (CES1)</p>
+      </normalization>
+      <correction method="silent">
+        <p>See individual component headers.</p> 
+      </correction>
+      <quotation marks="all" form="unknown">
+        <p>All quoation marks coverted to q, original rendering in 
+          rend attribute. At times marked with other attributes (who, type).
+          q sometimes occurs within s - TEI extended to accommodate.
+          See also individual component headers.</p>
+      </quotation>
+      <segmentation>
+        <p>Marked up to the level of paragraph: p, quote plus marking of
+          sub-paragraph element q. Some marking of particular sub-paragraph
+          elements, e.g. name, date, abbr, mentioned, distinct, foreign.
+          See also individual component headers.</p>
+      </segmentation>
+      <hyphenation eol="some">
+        <p>No end-of-line hyphenation present in texts.</p>
+      </hyphenation>
+      <stdVals>
+        <p>The two-letter language codes follow ISO 639.</p>
+      </stdVals>
+    </editorialDecl>
+  </encodingDesc>
+  <profileDesc>
+    <langUsage>
+     <language ident="bg">Bulgarian</language>      <!--SLAVIC-->
+     <language ident="cs">Czech</language>          <!--SLAVIC-->
+     <language ident="en">English</language>        <!--GERMANIC-->
+     <language ident="et">Estonian</language>       <!--FINNO-UGRIC-->
+     <language ident="hu">Hungarian</language>      <!--FINNO-UGRIC-->
+     <language ident="lt">Lithuanian</language>     <!--BALTIC-->
+     <language ident="ro">Romanian</language>       <!--ROMANCE-->
+     <language ident="ru">Russian</language>        <!--SLAVIC-->
+     <language ident="sl">Slovene</language>        <!--SLAVIC-->
+     <language ident="sr">Serbian</language>        <!--SLAVIC-->
+    </langUsage>
+  </profileDesc>
+  <revisionDesc>
+      <change><date>2015-06-09</date><name>Tomaž Erjavec</name>Some small changes for CLARIN.SI release.</change>
+    <change><date>2015-05-22</date><name>Tomaž Erjavec</name>Removed fiction, newspapes and speech texts, simplified header.</change>
+    <change><date>2009-11-04</date><name>Tomaž Erjavec</name>Conversion to MULTEXT-East TEI P5.</change>
+    <change><date>2004-05-10</date><name>Tomaž Erjavec</name>From BETA to FINAL V3</change>
+    <change><date>2004-04-09</date><name>Tomaž Erjavec</name>Updated Serbian Orwell</change>
+    <change><date>2004-03-12</date><name>Tomaž Erjavec</name>Some minor changes to Orwells</change>
+    <change><date>2004-02-27</date><name>Tomaž Erjavec</name>Harmonised with CONCEDE/cesAna Orwell corpus.</change>
+    <change><date>2004-02-25</date><name>Tomaž Erjavec</name>Included 1984 -lt, -sr, -ru in the corpus, 
+         converted the TELRI edition (SGML, CES) to TEI P4 and prepared the data for MTE V3.</change>
+    <change><date>1997-10-05</date><name>Tomaz Erjavec, IJS</name>Final MTE release</change>
+    <change><date>1996-11-02</date><name>Tomaz Erjavec, IJS</name>Internal Release for IM3</change>
+</revisionDesc>
+</teiHeader>
+&orwl-en;
+&orwl-ro;
+&orwl-sl;
+&orwl-cs;
+&orwl-bg;
+&orwl-et;
+&orwl-hu;
+&orwl-ru;
+&orwl-lt;
+&orwl-sr;
+</teiCorpus>
