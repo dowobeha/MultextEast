@@ -1,0 +1,6 @@
+*.gold
+*.actual
+*.diff
+*.parallel
+*.parallel2
+*.stats
