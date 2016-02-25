@@ -7,7 +7,7 @@ OUT_FILE=$1_$(echo "${LANGs}" | tr -d ' ').parallel2
 IN_DIR=multextEast
 OUT_DIR=multextEastAligned
 
-./getIDs.rb ${IN_FILE} > ${OUT_FILE}
+ruby ./getIDs.rb ${IN_FILE} > ${OUT_FILE}
 
 cat ${OUT_FILE} | grep -v "^<s " | sed 's,<p id,<SPEAKER ID,' | sed 's,.*alignment="\([^"]*\)".*,\1,' > ${OUT_FILE}.gold
 
