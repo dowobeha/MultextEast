@@ -108,29 +108,3 @@ all_ids.each{|id1,set|
 	end	
 }
 puts "</linkGrp>"
-
-
-if false
-	while (still_merging(visited))
-		all_ids.sort.each{|id1,set|
-			unless visited[id1]
-				#puts "#{id1}\t<link targets=\"#{all_ids[id1].to_a.sort.join(" ")}\">"
-				set.each{|id2|
-					unless all_ids[id2].include?(id1)
-						all_ids[id2].add(id1)
-						visited[id1]=false
-					end
-				}
-				visited[id1]=true
-			end
-		}
-	end
-
-	visited2=Hash.new{|k,v| k[v]=false}
-	all_ids.sort.each{|id1,set|
-		unless visited2[id1]
-			puts "#{id1}\t<link targets=\"#{all_ids[id1].to_a.sort.join(" ")}\">"
-			set.each{|id2| visited2[id2]=true }
-		end
-	}
-end
