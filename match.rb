@@ -90,10 +90,21 @@ all_ids.each{|id1,set|
 	end	
 }
 
+def id2sortableID(id)
+	return id.sub(/^.*xml[^.]*\./, "").split(".").map{|part| 
+		x=part.to_i
+		if x < 10
+			"0#{x}"
+		else
+			"#{x}"
+		end
+	}.join(".")  
+end
+
 puts "<?xml version=\"1.0\" encoding=\"us-ascii\"?>"
 puts "<linkGrp xmlns=\"http://www.tei-c.org/ns/1.0\" type=\"alignment\" corresp=\"#{languages.to_a.sort.join(" ")}\">"
 vis2=Hash.new{|k,v| k[v]=false}
-all_ids.keys.sort_by{|key| key.sub(/^.*xml[^.]*\./, "") }.each{|id1|
+all_ids.keys.sort_by{|key| id2sortableID(key) }.each{|id1|
 	#puts id1
 	unless vis2[id1]==true
 		alignment=Hash.new{|k,v| k[v]=0}
