@@ -93,7 +93,8 @@ all_ids.each{|id1,set|
 puts "<?xml version=\"1.0\" encoding=\"us-ascii\"?>"
 puts "<linkGrp xmlns=\"http://www.tei-c.org/ns/1.0\" type=\"alignment\" corresp=\"#{languages.to_a.sort.join(" ")}\">"
 vis2=Hash.new{|k,v| k[v]=false}
-all_ids.each{|id1,set|
+all_ids.keys.sort_by{|key| key.sub(/^.*xml[^.]*\./, "") }.each{|id1|
+	#puts id1
 	unless vis2[id1]==true
 		alignment=Hash.new{|k,v| k[v]=0}
 		all_ids[id1].to_a.each{|id|
@@ -104,7 +105,7 @@ all_ids.each{|id1,set|
 		print "<link n=\""
 		print languages.to_a.sort.map{|file_name| alignment[file_name]}.join(":")
 		puts "\" targets=\"#{all_ids[id1].to_a.sort.join(" ")}\">"
-		set.each{|id2| vis2[id2]=true }
+		all_ids[id1].each{|id2| vis2[id2]=true }
 	end	
 }
 puts "</linkGrp>"
